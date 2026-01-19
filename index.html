@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"/>    
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="main-heading">ATS Resume Compatibility Checker</h1>
+        <p class="description">An ATS-style resume analyzer that evaluates how well a resume aligns with automated screening systems. The tool extracts text from resumes, identifies relevant keywords, detects missing skills, and provides an instant compatibility score — all directly in the browser.</p>
+        <div class="input-cont">
+            <div>
+                <textarea id="input-text" placeholder="Enter Your Resume Text here..."></textarea>
+                <p>(or)</p>
+                <div class="input-file">
+                    <input type="file" accept="application/pdf" id="pdf-input" />
+                </div>
+            </div>
+            <div class="description-cont">
+                <textarea id="jd-text" placeholder="Enter Job Description here..."></textarea>
+            </div>
+            <p class="warning" id="warning-text"></p>
+            <button class="checkBtn" id="check-btn">Check Score</button>
+        </div>
+        <div class="output-cont out-dis">
+            <div>
+                <strong>ATS Score:</strong>
+                <p class="score-text"></p>
+            </div>
+            <div>
+                <strong>Matched Keywords:</strong>
+                <p class="matched"></p>
+            </div>
+            <div>
+                <strong>Missing Keywords:</strong>
+                <p class="missing"></p>
+            </div>
+            <div>
+                <strong>Resume Warnings:</strong>
+                <p class="sw"></p>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js";
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

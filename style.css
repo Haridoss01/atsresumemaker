@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    text-align: center;
+    background: conic-gradient(from 210deg,
+            #0B0714,
+            #1A0B2E,
+            #3B0764,
+            #7E22CE,
+            #C084FC,
+            #F5D0FE,
+            #C084FC,
+            #7E22CE,
+            #3B0764,
+            #1A0B2E,
+            #0B0714);
+    color: #FFD6FF;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.main {
+    padding: 1.4rem 3rem;
+}
+
+.main-heading {
+    font-family: "Roboto";
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.description {
+    line-height: 1.2;
+    color: #F8F5FF;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.input-cont {
+    padding: 3rem 1rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+.input-cont div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+textarea {
+    height: 60px;
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.input-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+}
+
+.checkBtn {
+    background: #7F5AF0;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-width: 0px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+.description-cont {
+    margin-top: 20px;
+}
+
+.description-cont textarea {
+    width: 100%;
+}
+
+.warning {
+    text-align: left;
+    color: red;
+    font-weight: 600;
+}
+
+.out-dis {
+    display: none;
+}
+
+.output-cont {
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+}
+
+.output-cont div {
+    text-align: left;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+    margin: 20px 0;
+}
+
+strong {
+    font-size: 1.2rem;
+}
+
+.output-cont div p {
+    margin-left: 40px;
+}
+
+@media (max-width:768px) {
+    .main {
+        padding: 1.2rem 2rem;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+
+    .input-cont {
+        padding: 2rem 1rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .input-cont div {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 80%;
+    }
+
+    .input-file {
+        padding: 2rem 1rem;
+        width: 80%;
+    }
+
+    .checkBtn {
+        margin-top: 1rem;
+    }
+
+
+    .description-cont {
+        width: 80%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .description-cont textarea {
+        width: 100%;
+    }
+
+    .warning {
+        font-size: 1.1rem;
+    }
+
+    .output-cont {
+        padding: 2rem 1rem;
+    }
+
+    .output-cont div {
+        padding: 2rem 1rem;
+        margin: 10px 0;
+    }
+
+    strong {
+        font-size: 1.1rem;
+    }
+
+    .output-cont div p {
+        margin-left: 20px;
+    }
+}
